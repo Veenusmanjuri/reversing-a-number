@@ -1,0 +1,16 @@
+num=input("Enter the Number:")
+rev=int(num[::-1])
+print(F"Original: {num},Reversed: {rev}")
+print()
+
+def Reverse(num):
+  rev=0
+  while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num//=10 
+    return rev
+n=int(input("Enter the Number:"))
+temp=n 
+rev=Reverse(n)
+print(F"Original:{temp},Reversed:{rev}")
